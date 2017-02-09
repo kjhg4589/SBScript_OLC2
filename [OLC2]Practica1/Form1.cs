@@ -25,10 +25,15 @@ namespace _OLC2_Practica1
 
         private void ejecutarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Dispose();
         }
 
         private void albunDeImagenesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

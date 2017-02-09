@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.guardarComoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ejecutarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ejecutarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.reporteErroresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.albunDeImagenesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rc_consola = new System.Windows.Forms.RichTextBox();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guardarComoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ejecutarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ejecutarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteErroresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.albunDeImagenesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -60,39 +61,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(1601, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // guardarComoToolStripMenuItem
-            // 
-            this.guardarComoToolStripMenuItem.Image = global::_OLC2_Practica1.Properties.Resources.save;
-            this.guardarComoToolStripMenuItem.Name = "guardarComoToolStripMenuItem";
-            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(113, 20);
-            this.guardarComoToolStripMenuItem.Text = "Guardar Como";
-            // 
-            // ejecutarToolStripMenuItem
-            // 
-            this.ejecutarToolStripMenuItem.Name = "ejecutarToolStripMenuItem";
-            this.ejecutarToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
-            this.ejecutarToolStripMenuItem.Text = "Cerrar";
-            this.ejecutarToolStripMenuItem.Click += new System.EventHandler(this.ejecutarToolStripMenuItem_Click);
-            // 
-            // ejecutarToolStripMenuItem1
-            // 
-            this.ejecutarToolStripMenuItem1.Name = "ejecutarToolStripMenuItem1";
-            this.ejecutarToolStripMenuItem1.Size = new System.Drawing.Size(61, 20);
-            this.ejecutarToolStripMenuItem1.Text = "Ejecutar";
-            // 
-            // reporteErroresToolStripMenuItem
-            // 
-            this.reporteErroresToolStripMenuItem.Name = "reporteErroresToolStripMenuItem";
-            this.reporteErroresToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
-            this.reporteErroresToolStripMenuItem.Text = "Reporte Errores";
-            // 
-            // albunDeImagenesToolStripMenuItem
-            // 
-            this.albunDeImagenesToolStripMenuItem.Name = "albunDeImagenesToolStripMenuItem";
-            this.albunDeImagenesToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.albunDeImagenesToolStripMenuItem.Text = "Imagenes";
-            this.albunDeImagenesToolStripMenuItem.Click += new System.EventHandler(this.albunDeImagenesToolStripMenuItem_Click);
             // 
             // tabControl1
             // 
@@ -141,10 +109,47 @@
             // 
             // guardarToolStripMenuItem
             // 
-            this.guardarToolStripMenuItem.Image = global::_OLC2_Practica1.Properties.Resources.save1;
+            this.guardarToolStripMenuItem.Image = global::_OLC2_Practica1.Properties.Resources.disk;
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
             this.guardarToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.guardarToolStripMenuItem.Text = "Guardar";
+            // 
+            // guardarComoToolStripMenuItem
+            // 
+            this.guardarComoToolStripMenuItem.Image = global::_OLC2_Practica1.Properties.Resources.card;
+            this.guardarComoToolStripMenuItem.Name = "guardarComoToolStripMenuItem";
+            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(113, 20);
+            this.guardarComoToolStripMenuItem.Text = "Guardar Como";
+            // 
+            // ejecutarToolStripMenuItem
+            // 
+            this.ejecutarToolStripMenuItem.Image = global::_OLC2_Practica1.Properties.Resources.exit;
+            this.ejecutarToolStripMenuItem.Name = "ejecutarToolStripMenuItem";
+            this.ejecutarToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.ejecutarToolStripMenuItem.Text = "Cerrar";
+            this.ejecutarToolStripMenuItem.Click += new System.EventHandler(this.ejecutarToolStripMenuItem_Click);
+            // 
+            // ejecutarToolStripMenuItem1
+            // 
+            this.ejecutarToolStripMenuItem1.Image = global::_OLC2_Practica1.Properties.Resources.Run;
+            this.ejecutarToolStripMenuItem1.Name = "ejecutarToolStripMenuItem1";
+            this.ejecutarToolStripMenuItem1.Size = new System.Drawing.Size(77, 20);
+            this.ejecutarToolStripMenuItem1.Text = "Ejecutar";
+            // 
+            // reporteErroresToolStripMenuItem
+            // 
+            this.reporteErroresToolStripMenuItem.Image = global::_OLC2_Practica1.Properties.Resources.print;
+            this.reporteErroresToolStripMenuItem.Name = "reporteErroresToolStripMenuItem";
+            this.reporteErroresToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
+            this.reporteErroresToolStripMenuItem.Text = "Reporte Errores";
+            // 
+            // albunDeImagenesToolStripMenuItem
+            // 
+            this.albunDeImagenesToolStripMenuItem.Image = global::_OLC2_Practica1.Properties.Resources.images;
+            this.albunDeImagenesToolStripMenuItem.Name = "albunDeImagenesToolStripMenuItem";
+            this.albunDeImagenesToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
+            this.albunDeImagenesToolStripMenuItem.Text = "Imagenes";
+            this.albunDeImagenesToolStripMenuItem.Click += new System.EventHandler(this.albunDeImagenesToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -154,9 +159,11 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "SBScript";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
